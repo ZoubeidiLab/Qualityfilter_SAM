@@ -1,0 +1,1 @@
+egrep -w 'NM:i:[0-5]|@SQ|@PG' fileName.sam | awk '($5 == 60 && $2 < 2048) || $1~/^@/' > fileName-Q60.sam
